@@ -15,5 +15,5 @@ Linux kernel. Because Linux kernel has different number for these pins. So secon
 
 ## Commands for lighting on LED5 GREEN
 
-   You can find commands easily on the internet but you can find commands on the script I installed also.
+   You can find commands easily on the internet but I gave commands on the script I installed also.
 
