@@ -7,7 +7,7 @@ If we get in /sys/class directory, we will see a lot of drivers for hardware int
 
 ## Let's control GPIO interface
 
-   If we don't want to mess with breadboard, jumper cable, led, resistor etc., the easiest way of seeing whether we can control a GPIO pin on the board is controlling a pin connected to a free led on the board. Firstly we should look at the datasheet of Ixora Carrier (not Apalis). Open [datasheet of Ixora Carrier main board](https://docs.toradex.com/104004-apalis-arm-ixora-datasheet-v1-1.pdf), 
+   If we don't want to deal with breadboard, jumper cable, led, resistor etc., the easiest way of seeing whether we can control a GPIO pin on the board is controlling a pin connected to a free led on the board. Firstly we should look at the datasheet of Ixora Carrier (not Apalis). Open [datasheet of Ixora Carrier main board](https://docs.toradex.com/104004-apalis-arm-ixora-datasheet-v1-1.pdf), 
 and look at Page 10. You will see a top side technical drawing of the board and it is so clear where which leds are locating. We suppose our goal is controlling LED5. Now we have to find how to light on
 that led so we are going down to page 14. We will see a table that points which leds how to light on. Led 5 has 2 color led, red and green. Let's try to light on the green led. You will see you have to
 make pin 152 of the MXM3 connector high to light on LED5 GREEN. MXM3 is GPIO interface of Apalis Tk1. 152 is pyhsical number of GPIO interface, we can't control this pin of GPIO giving this number to
